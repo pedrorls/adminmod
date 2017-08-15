@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+
+class SalesSummary(Sales):
+    class Meta:
+        proxy = True
+        verbose_name = 'Sale Summary'
+        verbose_name_plural = 'Sales Summary'
